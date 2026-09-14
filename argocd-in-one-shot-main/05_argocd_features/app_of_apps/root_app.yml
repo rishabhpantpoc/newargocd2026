@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/rishabhpantpoc/newargocd2026.git   # Repo containing child apps
     targetRevision: main        # Git branch to track
-    path: app_of_apps/apps   # Path where child app manifests are stored
+    path: argocd-demos-main/app_of_apps/apps   # Path where child app manifests are stored
   destination:
     server: https://192.168.49.2:8443  # Deploying inside the same cluster
     namespace: argocd             # Applications (CRDs) must live in argocd namespace
